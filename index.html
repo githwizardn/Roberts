@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Houses for Rent | Roberts.com</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Find houses, apartments, land, and commercial properties for rent or sale across Kenya. Browse trending property listings and find your perfect home easily.">
+    <meta name="keywords" content="houses for rent, apartments for rent, property for sale, land for sale, Kenya real estate, home rental, property listings, commercial property, short let, event venues">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Roberts.com">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Find Houses for Rent | Roberts.com">
+    <meta property="og:description" content="Browse trending property listings and find your ideal home in Kenya. Rent, buy, or lease houses, apartments, and commercial spaces all in one place.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.roberts.com">
+    <meta property="og:image" content="https://www.roberts.com/img/hero.jpg">
+    <meta property="og:site_name" content="Roberts.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Find Houses for Rent | Roberts.com">
+    <meta name="twitter:description" content="Browse trending property listings and find your ideal home in Kenya. Rent, buy, or lease houses, apartments, and commercial spaces all in one place.">
+    <meta name="twitter:image" content="https://www.roberts.com/img/hero.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts & CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+
+<body>
+
+<div class="page-container">
+
+        <!-- HEADER -->
+<header class="d-flex align-items-center justify-content-between p-3 shadow-sm header-custom">
+    <div class="logo">
+        <a href="#"><img src="img/logo.png" alt="Roberts Logo" height="32"></a>
+    </div>
+    <nav class="d-none d-md-flex justify-content-center flex-grow-1">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#trending-section">Discover</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">Contact us</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">Sign in</a></li>
+        </ul>
+    </nav>
+    <div>
+        <a href="#" class="btn btn-custom fw-bold">Sell Something</a>
+    </div>
+</header>
+
+<!-- HERO & SIDEBAR -->
+<div class="container-fluid hero-section px-0">
+    <div class="row g-0">
+        
+        <!-- SIDEBAR -->
+        <div class="col-lg-3 sidebar p-4">
+            <h5 class="fw-bold mb-3">Location</h5>
+            <select class="form-select mb-5" aria-label="Location select">
+                <option selected>All Kenya</option>
+                <option value="1">Nairobi</option>
+                <option value="2">Mombasa</option>
+                <option value="3">Kisumu</option>
+            </select>
+
+            <h5 class="fw-bold mb-3">Property</h5>
+            <div class="mb-5">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="prop-rent-house" >
+                    <label class="form-check-label" for="prop-rent-house">Houses & Apartments for Rent | 9548</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="prop-sale-house" checked>
+                    <label class="form-check-label" for="prop-sale-house">Houses & Apartments for Sale | 9548</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="prop-rent-land" checked>
+                    <label class="form-check-label" for="prop-rent-land">Land & Plots for Rent | 9548</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="prop-sale-land" >
+                    <label class="form-check-label" for="prop-sale-land">Land & Plots for Sale | 9548</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="prop-rent-commercial">
+                    <label class="form-check-label" for="prop-rent-commercial">Commercial Property for Rent | 9548</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="prop-sale-commercial">
+                    <label class="form-check-label" for="prop-sale-commercial">Commercial Property for Sale | 9548</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="prop-event-venues" checked>
+                    <label class="form-check-label" for="prop-event-venues">Event Centres, Venues & Worksta | 9548</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="prop-short-let"  >
+                    <label class="form-check-label" for="prop-short-let">Short Let Property | 9548</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="prop-short-let"  >
+                    <label class="form-check-label" for="prop-short-let">Land & Plots for Sale | 9548</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="prop-short-let"  >
+                    <label class="form-check-label" for="prop-short-let">Commercial Property for Rent | 9548</label>
+                </div>
+            </div>
+
+            <h5 class="fw-bold mb-3">Price range</h5>
+            <div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="price-under-13" >
+                    <label class="form-check-label" for="price-under-13">Under 13 K • 2183 ads</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="price-13-160" checked>
+                    <label class="form-check-label" for="price-13-160">13 - 160 K • 2183 ads</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="price-160-6m" checked>
+                    <label class="form-check-label" for="price-160-6m">160 K - 6 M • 2183 ads</label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="price-6m-55m">
+                    <label class="form-check-label" for="price-6m-55m">6 - 55 M • 2183 ads</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- HERO -->
+        <div class="col-lg-9 hero-content d-flex flex-column align-items-center text-center">
+            <h1 class="fw-bold mb-3">Find the house you want easily</h1>
+            <p class="text-muted mb-4">Buy, sell, rent or lease on just one platform</p>
+            <div class="input-group search-box shadow-sm">
+                <input type="text" class="form-control border-0 py-3" placeholder="Search...">
+                <span class="input-group-text border-0 bg-white">
+                    🔍
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TRENDING ADS -->
+<section class="container-fluid py-5 trending-section" id="trending-section">
+    <h3 class="mb-4 fw-bold">Trending ads</h3>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+        <!-- PROPERTY CARD 1 -->
+        <div class="col">
+            <a href="home.html" class="text-decoration-none text-dark">
+                <div class="card property-card h-100 shadow-sm">
+                    <div class="card-img-wrapper position-relative">
+                        <span class="badge vip-badge position-absolute">VIP TOP+</span>
+                        <img src="img/home1.jpg" class="card-img-top" alt="Property 1">
+                        <div class="price-overlay position-absolute">$1450 / month</div>
+                    </div>
+                    <div class="card-body p-3">
+                        <h6 class="card-title fw-bold">200 Acres Parcel for Sale in Namanga</h6>
+                        <p class="text-muted small">Nairobi, Namanga</p>
+                        <div class="d-flex justify-content-between mt-3 small text-muted">
+                            <span>5 Bedroom</span>
+                            <span>3 Bathroom</span>
+                            <span>450 Sq.m</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- PROPERTY CARD 2 -->
+        <div class="col">
+            <a href="home.html" class="text-decoration-none text-dark">
+                <div class="card property-card h-100 shadow-sm">
+                    <div class="card-img-wrapper position-relative">
+                        <span class="badge vip-badge position-absolute">VIP TOP+</span>
+                        <img src="img/home2.jpg" class="card-img-top" alt="Property 2">
+                        <div class="price-overlay position-absolute">$1450 / month</div>
+                    </div>
+                    <div class="card-body p-3">
+                        <h6 class="card-title fw-bold">200 Acres Parcel for Sale in Namanga</h6>
+                        <p class="text-muted small">Nairobi, Namanga</p>
+                        <div class="d-flex justify-content-between mt-3 small text-muted">
+                            <span>5 Bedroom</span>
+                            <span>3 Bathroom</span>
+                            <span>450 Sq.m</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- PROPERTY CARD 3 -->
+        <div class="col">
+            <a href="home.html" class="text-decoration-none text-dark">
+                <div class="card property-card h-100 shadow-sm">
+                    <div class="card-img-wrapper position-relative">
+                        <span class="badge vip-badge position-absolute">VIP TOP+</span>
+                        <img src="img/home3.jpg" class="card-img-top" alt="Property 3">
+                        <div class="price-overlay position-absolute">$1450 / month</div>
+                    </div>
+                    <div class="card-body p-3">
+                        <h6 class="card-title fw-bold">200 Acres Parcel for Sale in Namanga</h6>
+                        <p class="text-muted small">Nairobi, Namanga</p>
+                        <div class="d-flex justify-content-between mt-3 small text-muted">
+                            <span>5 Bedroom</span>
+                            <span>3 Bathroom</span>
+                            <span>450 Sq.m</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- PROPERTY CARD 4 -->
+        <div class="col">
+            <a href="home.html" class="text-decoration-none text-dark">
+                <div class="card property-card h-100 shadow-sm">
+                    <div class="card-img-wrapper position-relative">
+                        <span class="badge vip-badge position-absolute">VIP TOP+</span>
+                        <img src="img/home4.jpg" class="card-img-top" alt="Property 4">
+                        <div class="price-overlay position-absolute">$1450 / month</div>
+                    </div>
+                    <div class="card-body p-3">
+                        <h6 class="card-title fw-bold">200 Acres Parcel for Sale in Namanga</h6>
+                        <p class="text-muted small">Nairobi, Namanga</p>
+                        <div class="d-flex justify-content-between mt-3 small text-muted">
+                            <span>5 Bedroom</span>
+                            <span>3 Bathroom</span>
+                            <span>450 Sq.m</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- PROPERTY CARD 5 -->
+        <div class="col">
+            <a href="home.html" class="text-decoration-none text-dark">
+                <div class="card property-card h-100 shadow-sm">
+                    <div class="card-img-wrapper position-relative">
+                        <span class="badge vip-badge position-absolute">VIP TOP+</span>
+                        <img src="img/home1.jpg" class="card-img-top" alt="Property 5">
+                        <div class="price-overlay position-absolute">$1450 / month</div>
+                    </div>
+                    <div class="card-body p-3">
+                        <h6 class="card-title fw-bold">200 Acres Parcel for Sale in Namanga</h6>
+                        <p class="text-muted small">Nairobi, Namanga</p>
+                        <div class="d-flex justify-content-between mt-3 small text-muted">
+                            <span>5 Bedroom</span>
+                            <span>3 Bathroom</span>
+                            <span>450 Sq.m</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- PROPERTY CARD 6 -->
+        <div class="col">
+            <a href="home.html" class="text-decoration-none text-dark">
+                <div class="card property-card h-100 shadow-sm">
+                    <div class="card-img-wrapper position-relative">
+                        <span class="badge vip-badge position-absolute">VIP TOP+</span>
+                        <img src="img/home2.jpg" class="card-img-top" alt="Property 6">
+                        <div class="price-overlay position-absolute">$1450 / month</div>
+                    </div>
+                    <div class="card-body p-3">
+                        <h6 class="card-title fw-bold">200 Acres Parcel for Sale in Namanga</h6>
+                        <p class="text-muted small">Nairobi, Namanga</p>
+                        <div class="d-flex justify-content-between mt-3 small text-muted">
+                            <span>5 Bedroom</span>
+                            <span>3 Bathroom</span>
+                            <span>450 Sq.m</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- PROPERTY CARD 7 -->
+        <div class="col">
+            <a href="home.html" class="text-decoration-none text-dark">
+                <div class="card property-card h-100 shadow-sm">
+                    <div class="card-img-wrapper position-relative">
+                        <span class="badge vip-badge position-absolute">VIP TOP+</span>
+                        <img src="img/home3.jpg" class="card-img-top" alt="Property 7">
+                        <div class="price-overlay position-absolute">$1450 / month</div>
+                    </div>
+                    <div class="card-body p-3">
+                        <h6 class="card-title fw-bold">200 Acres Parcel for Sale in Namanga</h6>
+                        <p class="text-muted small">Nairobi, Namanga</p>
+                        <div class="d-flex justify-content-between mt-3 small text-muted">
+                            <span>5 Bedroom</span>
+                            <span>3 Bathroom</span>
+                            <span>450 Sq.m</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- PROPERTY CARD 8 -->
+        <div class="col">
+            <a href="home.html" class="text-decoration-none text-dark">
+                <div class="card property-card h-100 shadow-sm">
+                    <div class="card-img-wrapper position-relative">
+                        <span class="badge vip-badge position-absolute">VIP TOP+</span>
+                        <img src="img/home4.jpg" class="card-img-top" alt="Property 8">
+                        <div class="price-overlay position-absolute">$1450 / month</div>
+                    </div>
+                    <div class="card-body p-3">
+                        <h6 class="card-title fw-bold">200 Acres Parcel for Sale in Namanga</h6>
+                        <p class="text-muted small">Nairobi, Namanga</p>
+                        <div class="d-flex justify-content-between mt-3 small text-muted">
+                            <span>5 Bedroom</span>
+                            <span>3 Bathroom</span>
+                            <span>450 Sq.m</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer-custom py-4">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+        <!-- Navigation -->
+        <div class="footer-nav mb-2 mb-md-0">
+            <a href="#">Home</a> 
+            <a href="#trending-section">Discover</a>  
+            <a href="#">Contact us</a> 
+            <a href="#">Sign in</a>
+        </div>
+
+        <!-- Support Email -->
+        <div class="footer-support mb-2 mb-md-0">
+            <a href="mailto:Support@Roberts.com">Support@Roberts.com</a>
+        </div>
+
+        <!-- Socials -->
+     <div class="footer-socials mb-2 mb-md-0">
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a> | 
+    <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+</div>
+
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copy text-center mt-3">
+        <span class="small text-white">© 2022 Robert.co.ke Gibraltar</span>
+    </div>
+</footer>
+
+    
+</div>
+
+
+</body>
+</html>
