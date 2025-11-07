@@ -245,7 +245,7 @@ body {
 }
 
 /* MOBILE ONLY */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .mobile-nav {
     display: none;
   }
