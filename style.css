@@ -276,17 +276,17 @@ body {
 
 
     /* 1. Hide ALL columns within the similar ads section */
-    .trending-section .row > .col {
+    .trendingg-section .row > .col {
         display: none !important; 
     }
     
     /* 2. Make ONLY the first column visible */
-    .trending-section .row > .col:first-child {
+    .trendingg-section .row > .col:first-child {
         display: block !important; /* Or display: inline-block, flex, etc., depending on what it needs */
     }
     
     /* 3. OPTIONAL: If the first card is still not full width (col-12), enforce it: */
-    .trending-section .row > .col:first-child {
+    .trendingg-section .row > .col:first-child {
         width: 100% !important;
         flex: 0 0 100% !important; 
     }
