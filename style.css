@@ -97,6 +97,10 @@ body {
     border-color: var(--roberts-green) !important;
 }
 
+#propertyImage {
+  width:    100%;
+   object-fit: cover;  
+}
 
 
 /* --- HERO --- */
